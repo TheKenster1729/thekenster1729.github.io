@@ -60,6 +60,21 @@ mark {
 	color: inherit;
 }
 
+.wrap {
+    width: 25em;
+    height: 17.5em;
+    overflow: hidden;
+}
+
+iframe {
+	width: 60%;
+	height: 100%;
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
 .projects {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -2698,6 +2713,14 @@ input, select, textarea {
 			}
 
 /* Section/Article */
+
+	section.rightalign, article.rightalign {
+		text-align: right;
+	}
+
+	section.rightalign header.major h2:after, article.rightalign header.major h2:after {
+		margin-left: auto;
+	}
 
 	section.special, article.special {
 		text-align: center;
